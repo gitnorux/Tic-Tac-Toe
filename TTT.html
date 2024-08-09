@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+
+            margin: 0%;
+            padding:0;
+            background-color: rgb(209, 157, 191);
+            text-align: center;
+        }
+        .container{
+
+            justify-content: center;
+            align-items: center;
+            display: flex;
+height: 60vh;
+        }
+   
+   
+   .box{
+
+height:16vmin;
+border-radius: 1rem;
+font-size: 40px;
+font-weight: bolder;
+width: 16vmin;
+box-shadow: 0 0 1rem rgba(168, 230, 67, 3);
+border: none;
+background-color: rgb(227, 140, 64);
+
+   }
+   .game{
+height: 60vmin;
+width:60vmin;;
+display: flex;
+flex-wrap: wrap;justify-content: center;
+align-items: center;
+gap: 1.5vmin;
+   }
+   #reset-btn{
+
+height:18vmin;
+border-radius: 50%;
+width: 18vmin;
+font-weight: bolder;
+color:rgb(75, 2, 91);
+box-shadow: 0 0 1rem rgba(218, 2, 77, 3);
+border: none;
+background-color: rgb(188, 230, 20);
+
+
+   }
+   #reset-btn:hover{
+background-color: rgb(228, 175, 221);
+   border: 5px solid rgb(38, 187, 48);
+
+   }
+
+
+   
+   #new-btn{
+
+height:18vmin;
+border-radius: 50%;
+width: 18vmin;
+font-weight: bolder;
+color:rgb(75, 2, 91);
+box-shadow: 0 0 1rem rgba(218, 2, 77, 3);
+border: none;
+background-color: rgb(188, 230, 20);
+
+
+   }
+   #new-btn:hover{
+background-color: rgb(228, 175, 221);
+   border: 5px solid rgb(143, 143, 211);
+
+   }
+   .btu{
+
+
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+   }
+   #msg-container{
+      width: 200px;
+height: 70px;
+display: none;
+font-size: 40px;;
+background-color: aquamarine;
+border-color: transparent;
+
+   }
+   #msg-container #msg{
+
+      background-color: aquamarine;
+      font-size:40px;
+      display: none;
+      text-shadow: 0 0 0 1.5 red;
+      font-weight: bolder;
+     
+   }
+   </style>
+</head>
+<body>
+    <div class="main">
+      <div style="background-color: rgb(10, 163, 10);" msg-container">
+      <p id="msg" style="font-size: 40px;"></p>
+
+      </div>
+<h1>Tic Tac Toe</h1>
+<div class="container">
+<div class="game">
+
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+<button class="box"></button>
+</div>
+
+</div>
+<div class="btu">
+   <button id="reset-btn">
+    Reset Game</button>
+    
+    
+<button id="new-btn">
+   New Game</button>
+</div>
+
+   </div>
+      </body>
+    <script src="TTT.js"></script>
+</body>
+</html>
